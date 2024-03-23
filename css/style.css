@@ -1,0 +1,135 @@
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+.header{
+    height: 80px;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2.5rem;
+}
+.logo a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color) ;
+}
+.nav_list a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding-right: 40px;
+    font-weight: bold;
+}
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+.main_container{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+.info_h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--main-color)
+}
+.info__icons{
+    display: flex;
+}
+.icons__item{
+    padding-right: 20px;
+}
+.item__text{
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+}
+.item__text:before{
+    content: "\f0c2";
+    color: var(--accent-color);
+    font-family: "Font Awesome 5 Free",serif;
+    font-weight: 700;
+    font-size: 2rem;
+    position: absolute;
+    top: -40px;
+}
+.item__text1:before{
+    content: "\f3d1";
+}
+.item__text2:before{
+    content: "\f2f2";
+}
+.intro__form{
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.label_name{
+    padding: 12px 0;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+.btn{
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 8px 0;
+}
+input::placeholder{
+    opacity: 0.4;
+}
+.intro__form .form{
+    margin-top: 30px;
+}
