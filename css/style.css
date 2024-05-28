@@ -21,7 +21,7 @@ body {
 .header_container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    height: 100%;
 }
 .logo{
     font-size: 2.5rem;
@@ -39,18 +39,18 @@ body {
     display: flex;
     list-style: none;
 }
-li{
-    padding-right: 40px;
+.nav_list a{
+    padding: 30px;
     font-weight: bold;
 }
 .main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 96px);
     display: flex;
     align-items: center;
 }
 .main_container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 p{
     font-size: 1.5rem;
